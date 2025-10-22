@@ -6,6 +6,9 @@
     <version>1.0.0</version>
     <packaging>jar</packaging>
 
+    <build>
+        <sourceDirectory>src/main/java</sourceDirectory>
+    </build>
     <dependencies>
         <!-- Spring Boot Starter -->
         <dependency>

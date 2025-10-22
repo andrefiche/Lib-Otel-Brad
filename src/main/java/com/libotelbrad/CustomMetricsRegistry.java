@@ -5,7 +5,6 @@ import io.opentelemetry.api.metrics.MeterProvider;
 import io.opentelemetry.api.metrics.ObservableLongGauge;
 import io.opentelemetry.api.metrics.LongCounter;
 import io.opentelemetry.api.metrics.LongUpDownCounter;
-import io.opentelemetry.api.metrics.DoubleHistogram;
 import org.springframework.stereotype.Component;
 
 @Component
