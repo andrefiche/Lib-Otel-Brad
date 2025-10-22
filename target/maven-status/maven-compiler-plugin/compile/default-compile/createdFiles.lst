@@ -1,2 +1,2 @@
-com/example/metrics/CustomMetricsRegistry.class
-com/example/metrics/CustomMetricsAutoConfiguration.class
+src/main/java/com/CustomMetricsAutoConfiguration.class
+src/main/java/com/CustomMetricsRegistry.class

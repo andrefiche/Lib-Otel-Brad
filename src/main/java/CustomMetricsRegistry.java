@@ -1,4 +1,4 @@
-package com.example.metrics;
+package src.main.java.com;
 
 import io.opentelemetry.api.metrics.Meter;
 import io.opentelemetry.api.metrics.MeterProvider;
