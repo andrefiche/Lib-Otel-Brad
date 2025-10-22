@@ -32,7 +32,7 @@ public class CustomMetricsRegistry {
                 .setDescription(description)
                 .setUnit("1")
                 .build();
-    }
+    } 
 
     // Gauge
     public ObservableLongGauge createGauge(String name, String description, Runnable callback) {
