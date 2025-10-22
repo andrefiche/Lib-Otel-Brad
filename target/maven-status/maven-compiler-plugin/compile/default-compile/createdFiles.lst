@@ -1,2 +1,2 @@
-src/main/java/com/CustomMetricsAutoConfiguration.class
-src/main/java/com/CustomMetricsRegistry.class
+com/libotelbrad/CustomMetricsAutoConfiguration.class
+com/libotelbrad/CustomMetricsRegistry.class

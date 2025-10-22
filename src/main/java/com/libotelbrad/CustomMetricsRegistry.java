@@ -1,4 +1,4 @@
-package src.main.java.com;
+package com.libotelbrad;
 
 import io.opentelemetry.api.metrics.Meter;
 import io.opentelemetry.api.metrics.MeterProvider;
