@@ -50,7 +50,7 @@
                 </repository>
                 <repository>
                     <id>github</id>
-                    <url>https://maven.pkg.github.com/andrefiche/Lib-Otel-Brad/</url>
+                    <url>https://maven.pkg.github.com/andrefiche/Lib-Otel-Brad</url>
                     <snapshots>
                         <enabled>true</enabled>
                     </snapshots>
