@@ -5,10 +5,11 @@
     <artifactId>lib-otel-brad</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>
-
+    
     <build>
         <sourceDirectory>src/main/java</sourceDirectory>
     </build>
+
     <dependencies>
         <!-- Spring Boot Starter -->
         <dependency>
@@ -38,10 +39,32 @@
             <version>1.28.0</version>
         </dependency>
     </dependencies>
+
+    <profiles>
+        <profile>
+            <id>github</id>
+            <repositories>
+                <repository>
+                    <id>central</id>
+                    <url>https://repo.maven.apache.org/maven2</url>
+                </repository>
+                <repository>
+                    <id>github</id>
+                    <url>https://maven.pkg.github.com/andrefiche/Lib-Otel-Brad/</url>
+                    <snapshots>
+                        <enabled>true</enabled>
+                    </snapshots>
+                </repository>
+            </repositories>
+        </profile>
+    </profiles>
+    
+    <!-- Distribution Management Maven -->
     <distributionManagement>
         <repository>
             <id>github</id>
-            <url>https://maven.pkg.github.com/USERNAME/REPOSITORY</url>
+            <name>GitHub andrefiche Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/andrefiche/Lib-Otel-Brad</url>
         </repository>
     </distributionManagement>
 </project>
