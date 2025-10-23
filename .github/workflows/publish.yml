@@ -68,7 +68,7 @@ jobs:
                   <server>
                       <id>github</id>
                       <username>${{ github.actor }}</username>
-                      <password>${{ secrets.TokenFiche}}</password>
+                      <password>${{ secrets.GITHUB_TOKEN }}</password>
                   </server>
               </servers>
           </settings>
