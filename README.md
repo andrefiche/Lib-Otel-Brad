@@ -7,8 +7,9 @@ A **Custom Metrics Library** é uma biblioteca Java baseada em OpenTelemetry que
 - **Contadores (`Counter`)**: Métricas cumulativas que aumentam ao longo do tempo, como o número de requisições ou eventos.
 - **Gauges (`Gauge`)**: Métricas que representam um valor em um momento específico, como o uso de memória ou o número de threads ativas.
 - **Contadores Incrementais e Decrementais (`UpDownCounter`)**: Métricas que podem ser incrementadas ou decrementadas, como o número de conexões ativas.
-- **Gauges Observáveis Incrementais e Decrementais (`ObservableUpDownGauge`)**: Métricas observáveis que suportam valores positivos e negativos.
+- **Gauges Observáveis (`ObservableGauge`)**: Métricas observáveis que representam valores em tempo real, como o número de usuários ativos.
 - **Histogramas (`Histogram`)**: Métricas que coletam distribuições de valores, como latências ou tamanhos de payload.
+- **Gauges Observáveis de Ponto Flutuante (`ObservableDoubleGauge`)**: Métricas observáveis que utilizam valores de ponto flutuante, úteis para medições mais precisas.
 
 ## Requisitos
 

@@ -5,6 +5,8 @@ import io.opentelemetry.api.metrics.MeterProvider;
 import io.opentelemetry.api.metrics.ObservableLongGauge;
 import io.opentelemetry.api.metrics.LongCounter;
 import io.opentelemetry.api.metrics.LongUpDownCounter;
+import io.opentelemetry.api.metrics.DoubleHistogram;
+import io.opentelemetry.api.metrics.ObservableDoubleGauge;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -39,5 +41,23 @@ public class CustomMetricsRegistry {
                 .setUnit("1")
                 .ofLongs()
                 .buildWithCallback(measurement -> callback.run());
+    }
+
+    // Histogram
+    public DoubleHistogram createHistogram(String name, String description) {
+        return meter.histogramBuilder(name)
+                .setDescription(description)
+                .setUnit("ms") // Exemplo: unidade de tempo em milissegundos
+                .build();
+    }
+
+    // Observable Gauge (Double)
+    public ObservableDoubleGauge createObservableGauge(String name, String description, Runnable callback) {
+        return meter.gaugeBuilder(name)
+                .setDescription(description)
+                .setUnit("1")
+                .buildWithCallback(measurement -> {
+                    callback.run();
+                });
     }
 }
